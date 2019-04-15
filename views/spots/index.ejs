@@ -1,0 +1,31 @@
+<h1>All spots list</h1>
+
+<p>Here are some suggestions!</p>
+
+<% if (true) { %>
+  <div class="row">
+    <% spots.forEach((s) => { %>
+      <a href="/spots/<%= s.id %>">
+        <div class="col s6 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="<%= s.image %>" alt="image of <%= s.name %>">
+              <span class="card-title"><%= s.name %></span>
+            </div>
+            <div class="card-content">
+              <p>Neighborhood: <%= s.neighborhood %></p>
+              <p>Rating: <%= s.rating %></p>
+              <p>Open Sunday: <%= s.sunday %></p>
+              <p>Address: <%= s.address %></p>
+            </div>
+            <div class="card-action">
+              <%= s.description %>
+            </div>
+          </div>
+        </div>
+      </a>
+    <% }); %>
+  </div>
+<% } else { %>
+  <p>Nothing to see here, folks.</p>
+<% } %>

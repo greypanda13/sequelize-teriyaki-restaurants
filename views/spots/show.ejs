@@ -1,0 +1,48 @@
+<h1><%= spot.name %></h1>
+
+<div class="row">
+  <div class="col s12 m4">
+    <div>
+      <img class="responsive-img" src="<%= spot.image %>" alt="<%= spot.name %> pic">
+    </div>
+  </div>
+  <div class="col s12 m8">
+    <%= spot.description %>
+  </div>
+</div>
+<div class="row">
+  <div class="col s12">
+    <h3 class="center">User Reviews</h3>
+    TO-DO: REVIEWS GO HERE
+  </div>
+</div>
+<div class="row">
+  <div class="col s12">
+    <h3 class="center">Add New Review</h3>
+    <form action="/reviews" method="post">
+      <div class="row">
+        <div class="input-field col s6">
+          <input name="name" id="name" type="text" class="validate">
+          <label for="name">Your Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input name="rating" id="rating" type="range" min="0" max="5" step="0.1" class="validate">
+          <label for="rating">Your Star Rating</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea name="comment" id="comment" class="materialize-textarea"></textarea>
+          <label for="comment">Your review</label>
+        </div>
+      </div>
+      <div class="row">
+        <button class="btn waves-effect waves-light" type="submit">Submit
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

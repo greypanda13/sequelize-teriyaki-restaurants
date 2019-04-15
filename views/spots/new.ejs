@@ -1,0 +1,61 @@
+<div class="row">
+    <form class="col s12" method="post" action="/spots">
+      <div class="row">
+        <div class="input-field col s6">
+          <input name="name" placeholder="The Teriyaki Place" id="name" type="text" class="validate">
+          <label for="name">Spot Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input name="neighborhood" id="neighborhood" type="text" class="validate">
+          <label for="neighborhood">Neighborhood</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input name="address" id="address" type="text" class="validate">
+          <label for="address">Address</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input name="image" id="image" type="text" class="validate">
+          <label for="image">Image URL</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s4">
+          <input name="specialty" id="specialty" type="text" class="validate">
+          <label for="specialty">Specialty Dish</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12 m6">
+          <input name="rating" id="rating" type="range" class="validate" min="0" max="5" step="0.1">
+          <label for="rating">Rating</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input name="price" id="price" type="range" class="validate" min="0" max="4">
+          <label for="price">Price</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea name="description" id="description" class="materialize-textarea"></textarea>
+          <label for="description">General description</label>
+        </div>
+      </div>
+      <div class="row">
+        <label>
+          <input name="sunday" id="sunday" type="checkbox" />
+          <span>Open Sunday?</span>
+        </label>
+      </div>
+      <div class="row">
+        <button class="btn waves-effect waves-light" type="submit">Submit
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
+    </form>
+  </div>
